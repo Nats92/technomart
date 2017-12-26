@@ -1,0 +1,312 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+.user-nav-backgr {
+    width: 100%;
+    color: #fff;
+    background-color: #293449;
+}
+    .user-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 940px;
+        padding: 0 130px;
+        margin: 0 auto;
+        height: 42px;
+    }
+    .link-font {
+        font-family: "Cuprum", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 17px;
+        line-height: 18px;
+    }
+        .link-font:active {
+            opacity: 0.6;
+        }
+        .search-form:hover {
+            background-color:#212a3a;
+        }
+        .link-icon::before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 14px;
+
+            width:17px;
+            height: 17px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+
+            opacity: 0.3;
+        }
+            .link-icon:hover::before {
+                opacity: 1;
+            }
+            .link-icon:active::before {
+                opacity: 0.6;
+            }
+            .top-logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                font-family: "Cuprum", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 24px;
+                line-height: 24px;
+                color: #ffffff;
+
+                width: 220px;
+                height: 42px;
+
+                background-color: #ee3643;
+                -webkit-box-shadow: 0 5px 0 0 #b72f38;
+                -moz-box-shadow: 0 5px 0 0 #b72f38;
+                box-shadow: 0 5px 0 0 #b72f38;
+
+                cursor: pointer;
+                flex-shrink: 0;
+            }
+                .top-logo:hover {
+                    background-color: #ca2c37;
+                }
+                .top-logo:active {
+                    background-color: #ba2732;
+                }
+
+        .bookmark-and-order {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 740px;
+        }
+            .search-form {
+                font-family: "Cuprum", sans-serif;
+                font-size: 17px;
+                line-height: 17px;
+                color: #fff;
+
+                width: 270px;
+                height: 42px;
+                background-color: transparent;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+                .search-form .search-field {
+                    background-color: inherit;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 52px;
+                    font: inherit;
+                    color: #fff;
+                    outline: none;
+                }
+                .search-form .search-label {
+                    position: relative;
+                }
+                .search-form .search-label::before {
+                    content: "";
+
+                    position: absolute;
+                    left: 18px;
+                    top: 50%;
+                    margin-top: -9px;
+
+                    width:17px;
+                    height: 17px;
+                    background-image: url("../img/icon-search.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+
+                    opacity: 0.3;
+                }
+                .search-form .search-field:focus {
+                    background-color: #ffffff;
+                    color: #000;
+                }
+                .search-form .search-field:focus .search-label::before {
+                    background-image: url("../img/icon-search-focus.svg");
+                    z-index: 10;
+                }
+                .search-form .search-field::placeholder {
+                    font: inherit;
+                    color: #fff;
+                }
+            .bookmark {
+                padding: 12px 20px;
+                margin-right: 8px;
+            }
+                .bookmark:hover {
+                    background-color:#212a3a;
+                }
+                .bookmark:active {
+                    background-color:#161d29;
+                }
+                .bookmark::before {
+                    width: 14px;
+                    height: 16px;
+                    background-image: url("../img/icon-bookmark.svg");
+                }
+            .cart {
+                padding: 12px 20px;
+                margin-right: 8px;
+            }
+                .cart:hover {
+                    background-color:#212a3a;
+                }
+                .cart:active {
+                    background-color:#161d29;
+                }
+                .cart::before {
+                    width: 15px;
+                    height: 15px;
+                    background-image: url("../img/cart-icon.svg");
+                }
+            .order {
+                background-color: #63a63e;
+                padding: 12px 20px;
+            }
+                .order:active {
+                    opacity: 0.6;
+                }
+                .order:hover {
+                    background-color: #5fbb2d;
+                }
+.main-header {
+    display: flex;
+
+    font-family: "Cuprum", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+    width: 100%;
+    padding-bottom: 60px;
+    background-color: #f3f7f8;
+}
+    .centering-wrap {
+        width: 940px;
+        padding: 0 130px;
+        margin: 0 auto;
+    }
+        .contacts-and-login {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            padding-top: 45px;
+            margin-bottom: 38px;
+        }
+            .description {
+                width: 196px;
+                padding: 5px 10px 0 50px;
+                margin: 0;
+
+                font-family: "Cuprum", sans-serif;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                color: #ee3643;
+            }
+            .contacts-and-login .contacts {
+                width: 270px;
+            }
+                .contacts-and-login .contacts .phone {
+                    color: #ee3643;
+                    font-size: 21px;
+                    line-height: 18px;
+
+                    padding: 10px 15px;
+                    margin-bottom: 5px;
+                    border: 3px solid #fff;
+                }
+                    .contacts-and-login .contacts .phone::before {
+                        content: "";
+                        display: inline-block;
+                        vertical-align: middle;
+                        background-image: url("../img/icon-phone.svg");
+                        width: 19px;
+                        height: 19px;
+                        margin-right: 40px;
+                    }
+                .contacts-and-login .contacts .address {
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #32425c;
+
+                    margin: 0;
+                }
+            .login-and-registration {
+                display: flex;
+                justify-content: space-between;
+
+                font-family: "Cuprum",sans-serif;
+                font-size: 21px;
+                line-height: 18px;
+                font-style: normal;
+                font-weight: 400;
+                color: #000;
+
+                width: 285px;
+                margin: 0;
+                padding: 0;
+
+                list-style: none;
+            }
+                .login-and-registration li {
+                    padding: 14px 26px;
+                    background-color: #fff;
+                }
+                .login-and-registration .login {
+                    position: relative;
+                    padding-left: 49px;
+                }
+                .login-and-registration .login::before {
+                    position: absolute;
+                    left: 14px;
+
+                    content: "";
+                    width: 20px;
+                    height: 17px;
+                    background-image: url("../img/icon-login.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    opacity: 0.3;
+                }
+        .nav-wrap {
+            display: flex;
+            justify-content: center;
+
+            margin: 0;
+            padding: 0;
+            background-color: #32425c;
+
+            box-shadow: 0 5px 0 0 #293449;
+            list-style: none;
+        }
+            .nav-wrap a {
+                display: block;
+                font-family: "Cuprum", sans-serif;
+                font-size: 17px;
+                line-height: 17px;
+                color: #fff;
+
+                padding: 20px 30px;
+                text-decoration: none;
+            }
+
