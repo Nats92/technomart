@@ -258,12 +258,9 @@
                     © 2010–2017 Компания «Техномарт» <br> Все права защищены
                 </p>
                 <ul class="social-icons-list">
-                    <li class="social-icons-item">
-                        <a class="social-icon-link vk" href="#"><span class="visually-hidden">Ссылка на страницу Вконтакте</span></a></li>
-                    <li class="social-icons-item">
-                        <a class="social-icon-link fb" href="#"><span class="visually-hidden">Ссылка на страницу в Фейсбук</span></a></li>
-                    <li class="social-icons-item">
-                        <a class="social-icon-link instagram" href="#"><span class="visually-hidden">Ссылка на страницу в Инстаграм</span></a></li>
+                    <li><a class="social-icon-link vk" href="#"><span class="visually-hidden">Ссылка на страницу Вконтакте</span></a></li>
+                    <li><a class="social-icon-link fb" href="#"><span class="visually-hidden">Ссылка на страницу в Фейсбук</span></a></li>
+                    <li><a class="social-icon-link instagram" href="#"><span class="visually-hidden">Ссылка на страницу в Инстаграм</span></a></li>
                 </ul>
                 <div class="feedback-and-development">
                     <p class="feedback">Обратная связь: <br> <a class="gold-mark" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
@@ -272,6 +269,26 @@
             </div>
         </div>    
     </footer>
+    
+    <div class="feedback-form-wrap hidden">
+        <section class="modal-feedback">
+            <form action="" class="feedback-form">
+                <label class="form-label half-width">Ваше имя:
+                <input class="form-field" type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
+
+                <label class="form-label half-width">Ваш e-mail:
+                <input class="form-field" type="email" name="mail" placeholder="Для отправки ответа"></label>
+
+                <label class="form-label">Текст письма:
+                <textarea class="form-field" cols="58" rows="5" name="message" placeholder="В свободной форме"></textarea></label>
+
+                <div class="submit-button-wrap">
+                    <button class="submit-form" type="submit">Отправить</button>
+                </div>
+                <button class="close-form" type="reset"><span class="visually-hidden">Закрыть форму</span></button>
+            </form>
+        </section>
+    </div>
     
     
     <script src="js/script.js" type="text/javascript"></script>

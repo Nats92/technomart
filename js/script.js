@@ -62,3 +62,28 @@ for (var i = 0; i < serviceSliderBtns.length; i++) {
 	})
 }
 
+var formWrap = document.querySelector(".feedback-form-wrap");
+var writeUsButt = document.querySelector(".write-us-button");
+var closeButt = document.querySelector(".close-form");
+
+writeUsButt.addEventListener("click", function(evt) {
+	evt.preventDefault();
+	formWrap.classList.remove("hidden");
+
+	formWrap.addEventListener("click", function emptyPlaceClick(evt) {
+		if (evt.target === formWrap) {
+			formWrap.classList.add("hidden");
+			formWrap.removeEventListener("click", emptyPlaceClick);
+		}
+	})
+	closeButt.addEventListener("click", function closeButtClick() {
+		formWrap.classList.add("hidden");
+		formWrap.removeEventListener("click", closeButtClick);
+	})
+	document.addEventListener("keydown", function onEscPress(evt) {
+		if(evt.keyCode === 27) {
+			formWrap.classList.add("hidden");
+			document.removeEventListener("click", onEscPress);
+		}
+	})
+})
