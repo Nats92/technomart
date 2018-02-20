@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 <body>
     <div class="user-nav-backgr">
@@ -225,6 +227,8 @@
         <section class="company-contacts">
             <h2 class="section-title">Контакты</h2>
             <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+            <div id="interactive-map"><span class="map-overlay"></span></div>
+            <div id="map-popup" class="hidden"><button class="close-map-popup"></button></div>       
             <img class="static-map" src="img/map.png" width="100%" height="auto" alt="Адрес офиса Техномарт: Санкт-Петербург, улица Большая Конюшенная, дом 19" >
             <a class="button write-us-button" href="contact-form.html">Заблудились? Напишите нам!</a>     
         </section>

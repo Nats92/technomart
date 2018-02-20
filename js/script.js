@@ -87,3 +87,60 @@ writeUsButt.addEventListener("click", function(evt) {
 		}
 	})
 })
+
+ymaps.ready(init);
+var map,
+	mapPopup,
+	placemark,
+	placemarkPopup;
+
+function init() {
+    map = new ymaps.Map("interactive-map", {
+        center: [59.938631, 30.323055],
+        zoom: 16
+    });
+    
+    placemark = new ymaps.Placemark([59.938631, 30.323055], {
+    	hintContent: "магазин Техномарт",
+    	balloonContent: "магазин Техномарт. г. Санкт-Петербург, улица Большая Конюшенная, дом 19"
+    	});
+    map.geoObjects.add(placemark);
+    map.controls.remove('trafficControl');
+    map.controls.remove('fullscreenControl');
+    map.controls.remove('typeSelector');
+    map.controls.remove('geolocationControl');
+    map.controls.remove('searchControl');
+    map.controls.remove('routeButton');
+    map.controls.remove('zoomControl');
+    map.controls.remove('rulerControl');
+
+
+    placemark.hint.open([59.939557, 30.323505]);
+
+    mapPopup = new ymaps.Map("map-popup", {
+        center: [59.938631, 30.323055],
+        zoom: 15
+    });
+
+    placemarkPopup = new ymaps.Placemark([59.938631, 30.323055], {
+    	hintContent: "магазин Техномарт",
+    	balloonContent: "магазин Техномарт. г. Санкт-Петербург, улица Большая Конюшенная, дом 19"
+    	});
+
+ 	mapPopup.geoObjects.add(placemarkPopup);
+    mapPopup.controls.remove('trafficControl');
+    mapPopup.controls.remove('fullscreenControl');
+    mapPopup.controls.remove('typeSelector');
+}
+
+var mapPart = document.querySelector(".map-overlay");
+var modalMap = document.querySelector("#map-popup");
+var modalClose = document.querySelector(".close-map-popup");
+
+mapPart.addEventListener("click", function() {
+	modalMap.classList.remove("hidden");
+
+	modalClose.addEventListener("click", function () {
+		modalMap.classList.add("hidden");
+	})
+})
