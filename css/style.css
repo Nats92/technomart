@@ -2156,6 +2156,122 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
             margin: 0;
         }
+.modal-product-added {
+    position: fixed;
+    top: 50%;
+    margin-top: -141px;
+    left: 50%;
+    margin-left: -310px;
+
+    font-family: "Cuprum", sans-serif;
+    text-align: center;
+
+    width: 620px;
+    height: 282px;
+    background-color: #fff;
+    border-top: 7px solid #ee3643;
+}
+    .modal-product-added-text {
+        position: relative;
+
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 400;
+
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 65px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+        .modal-product-added-text::before {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+
+            content: "";
+            width: 66px;
+            height: 66px;
+            margin-right: 44px;
+            background-image: url("../img/form-added.svg");
+        }
+    .buttons-wrap {
+        position: absolute;
+        bottom: 0;
+
+        font-size: 14px:
+        line-height: 18px;
+
+        width: 100%;
+        background-color: #f1f1f1; 
+        padding: 37px 0;
+    }
+        .buttons-wrap .make-order {
+            padding: 10px 0;  
+            width: 220px;
+            margin-right: 20px;
+        } 
+            .buttons-wrap .make-order:hover,
+            .buttons-wrap .make-order:focus {
+                background-color: #ca2c37;
+            }
+            .buttons-wrap .make-order:active {
+                background-color: #ba2732;
+            }
+        .buttons-wrap .back-to-catalog {
+            padding: 10px 0;  
+            width: 220px;
+            color: #000;
+            background-color: #fff;
+        }
+            .buttons-wrap .back-to-catalog:hover,
+            .buttons-wrap .back-to-catalog:focus {
+                color: #ee3643;
+            } 
+            .buttons-wrap .back-to-catalog:active {
+                color: rgba(0, 0, 0, 0.3);
+            }
+    .close-modal-product {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        width: 21px;
+        height: 21px;
+        background-color: transparent;
+        outline: none;
+        z-index: 11;
+    }
+        .close-modal-product::before,
+        .close-modal-product::after {
+            content: "";
+            position: absolute;
+            top: -3px;
+            right: 8px;
+
+
+            width: 4px;
+            height: 28px;
+            border-radius: 10px;
+            background-color: #ee3643;
+        }
+        .close-modal-product::before {
+            transform: rotate(45deg);
+        }
+        .close-modal-product::after {
+            transform: rotate(-45deg);
+        }
+        .close-modal-product:hover::before,
+        .close-modal-product:focus::before,
+        .close-modal-product:hover::after,
+        .close-modal-product:focus::after {
+            background-color: #ca2c37;
+        }
+        .close-modal-product:active::before,
+        .close-modal-product:active::after {
+            background-color: #ba2732;
+        }
+
 
 .hidden {
     display: none;

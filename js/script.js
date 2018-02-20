@@ -114,7 +114,6 @@ function init() {
     map.controls.remove('zoomControl');
     map.controls.remove('rulerControl');
 
-
     placemark.hint.open([59.939557, 30.323505]);
 
     mapPopup = new ymaps.Map("map-popup", {
