@@ -2013,7 +2013,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
         .catalog-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: flex-start;
 
             margin: 0;
@@ -2033,6 +2033,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
                 min-height: 318px;
                 padding: 10px;
                 margin-bottom: 20px;
+                margin-right: 20px;
                 background-color: #fff;
                 border: 1px solid #eaeaea;
 
@@ -2040,6 +2041,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
                 box-sizing: border-box;
                 outline: none;
             }
+                .catalog-item:nth-child(3n) {
+                    margin-right: 0;
+                }
                 .catalog-item:hover,
                 .catalog-item:focus {
                     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
